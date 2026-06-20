@@ -1,44 +1,120 @@
 <!DOCTYPE html>
 
 <html lang="en-US">
-    <head>
-        <title>SignUp</title>
-    </head>
 
-    <body>
-        <h1>Sign Up</h1>
+<head>
+    <title>SignUp</title>
+</head>
 
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <br><br>
+<body>
+    <h1>Sign Up</h1>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <br><br>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password">
-            <br><br>
+            <table border="0" cellpadding="3" cellspacing="0">
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" placeholder="Enter your name"></td>
+                </tr>
 
-            <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" name="dob">
-            <br><br>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Enter your email"></td>
+                </tr>
 
-            <label for="gender">Gender:</label>
-            <input type="radio" id="male" name="gender" value="male">Male
-            <input type="radio" id="female" name="gender" value="female">Female
-            <br><br>
+                <tr>
+                    <td><label for="age">Age:</label></td>
+                    <td><input type="number" id="age" name="age" placeholder="Enter your age"></td>
+                </tr>
 
-            <label for="file">Upload Profile Picture:</label>
-            <input type="file" id="file" name="file">
-            <br><br>
+                <tr>
+                    <td><label for="dob">DOB:</label></td>
+                    <td><input type="date" id="dob" name="dob"></td>
+                </tr>
 
-            <label for="address">Address:</label>
-            <textarea id="address" name="address" cols="10" rows="4"></textarea>
-            <br><br>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" id="gender-male" name="gender" value="male">Male
+                        <input type="radio" id="gender-female" name="gender" value="female">Female
+                    </td>
+                </tr>
 
-            <input type="submit" id="submit" value="Continue">
-        </form>
-    </body>
+                <tr>
+                    <td><label for="file">PFP:</label></td>
+                    <td><input type="file" id="file" name="file"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><textarea id="address" name="address" cols="12" rows="3"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td><label for="country">Country:</label></td>
+                    <td>
+                        <select id="country" name="country">
+                            <option value="Default">-----Select Country-----</option>
+                            <option value="usa">USA</option>
+                            <option value="canada">Canada</option>
+                            <option value="uk">UK</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Interests:</td>
+                    <td>
+                        <input type="checkbox" id="interests-sports" name="interests" value="sports">Sports
+                        <input type="checkbox" id="interests-music" name="interests" value="music">Music
+                        <input type="checkbox" id="interests-reading" name="interests" value="reading">Reading
+                    </td>
+                </tr>
+
+                <!--
+                <tr>
+                    <td><input type="submit" id="submit" value="Sign Up"></td>
+                </tr>
+                -->
+
+            </table>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>User Profile</legend>
+
+            <table border="0" cellpadding="3" cellspacing="0">
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" id="username" name="username" placeholder="Enter your username"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" placeholder="Enter your password"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="confirm-password">Confirm Password:</label></td>
+                    <td><input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <input type="checkbox" id="condition" name="condition" value="agree">
+        <label for="condition"><font color="red">I agree to the terms and conditions *</font></label>
+
+        <br><br>
+
+        <input type="submit" id="submit" value="Sign Up">
+        <input type="reset" id="reset" value="Reset">
+    </form>
+</body>
+
 </html>
