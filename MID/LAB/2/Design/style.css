@@ -1,0 +1,73 @@
+* {
+    margin: 0 auto;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+}
+
+fieldset {
+    max-width: 470px;
+    border-radius: 20px;
+    border-color: black;
+    box-shadow: 0 4px 7px;
+}
+
+h1 {
+    text-align: center;
+    color: #1100ff;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    border-color: rgb(0, 255, 0);
+    border-radius: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+input[type="radio"]+label,
+input[type="checkbox"]+label {
+    margin-right: auto;
+    display: inline;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: green;
+    color: yellow;
+    padding: 12px 30px;
+    width: auto;
+    border: none;
+}
+
+input[type="reset"] {
+    background-color: orangered;
+    color: white;
+    padding: 12px 30px;
+    width: auto;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #00ff00;
+    color: black;
+}
+
+/*#condition {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}*/
