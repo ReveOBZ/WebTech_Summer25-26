@@ -11,9 +11,13 @@
 
     <form>
         <fieldset>
+            <div class="fieldset-title">
             <legend>Student Information</legend>
+            </div>
 
             <table>
+
+                <div class="1st-group">
                 <tr>
                     <td><label>Full Name (Text)</label></td>
                     <td><label>Email Address</label></td>
@@ -22,7 +26,9 @@
                     <td><input type="text" name="fullname" placeholder="Enter your full name"></td>
                     <td><input type="email" name="email" placeholder="your.email@example.com"></td>
                 </tr>
+                </div>
 
+                <div class="2nd-group">
                 <tr>
                     <td><label>Password</label></td>
                     <td><label>Age (Number)</label></td>
@@ -31,7 +37,9 @@
                     <td><input type="password" name="password" placeholder="Enter secure password"></td>
                     <td><input type="number" name="age" placeholder="Enter your age"></td>
                 </tr>
+                </div>
 
+                <div class="3rd-group">
                 <tr>
                     <td><label>Experiment Date</label></td>
                     <td><label>Phone Number (Tel)</label></td>
@@ -40,12 +48,16 @@
                     <td><input type="date" name="birthdate" placeholder="Enter your birth date"></td>
                     <td><input type="number" name="phone" placeholder="+880 XXXX XXXXXX"></td>
                 </tr>
+                </div>
+
             </table>
 
         </fieldset>
 
+        <div class="buttons">
         <input type="submit" id="submit" value="Submit">
         <input type="reset" id="clr" value="Clear">
+        </div>
 
     </form>
 
