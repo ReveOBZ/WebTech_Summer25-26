@@ -1,0 +1,55 @@
+*
+{
+    margin: 0 auto;
+    padding: 7.5px;
+    box-sizing: border-box;
+}
+
+legend
+{
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    border: 1px solid #a200ff;
+    background-color: #0044ff;
+    padding: 5px;
+    text-align: left;
+}
+
+fieldset
+{
+    text-align: left;
+    background-color: #a9dce2;
+    max-width: 600px;
+    border-radius: 30px;
+    border-color: rgb(0, 99, 99);
+    box-shadow: 10 10px 10px;
+}
+
+input[type="submit"],
+input[type="reset"]
+{
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 5px;
+
+}
+
+body {
+    line-height: 1.5;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+{
+    width: 100%;
+    padding: 10px;
+    border-color: rgb(0, 255, 0);
+    border-radius: 10px;
+}
